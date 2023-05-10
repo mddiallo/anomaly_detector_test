@@ -34,4 +34,3 @@ anomaly_response = client.detect_univariate_entire_series(request)
 print("Detecting the anomaly status of the latest data point.")
 
 print(anomaly_response)
-
