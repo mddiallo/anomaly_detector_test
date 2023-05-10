@@ -1,5 +1,8 @@
 # import
 import os
+import json
+
+import pandas as pd
 
 from azure.ai.anomalydetector import AnomalyDetectorClient
 from azure.core.credentials import AzureKeyCredential
@@ -34,3 +37,9 @@ anomaly_response = client.detect_univariate_entire_series(request)
 print("Detecting the anomaly status of the latest data point.")
 
 print(anomaly_response)
+
+# convert timeseries
+# Need to fix this !!!
+# df = pd.DataFrame(list(anomaly_response.item()))
+
+# print(df)
